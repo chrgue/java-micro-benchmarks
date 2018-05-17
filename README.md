@@ -15,6 +15,6 @@ mvn test
 ```
 
 ###### Note:
-I was inspired by [this tutorial](http://www.baeldung.com/java-microbenchmark-harness).
+I was inspired by [this tutorial](http://www.baeldung.com/java-microbenchmark-harness) and [this repository](https://github.com/mle-enso/stackoverflow).
 
 
