@@ -1,10 +1,8 @@
-package com.cgu.benchmark;
+package com.cgu.benchmark.test;
 
 
 import static org.springframework.hateoas.mvc.ControllerLinkBuilder.linkTo;
 import static org.springframework.hateoas.mvc.ControllerLinkBuilder.methodOn;
-
-import java.io.IOException;
 
 import org.openjdk.jmh.annotations.Benchmark;
 import org.openjdk.jmh.annotations.BenchmarkMode;
@@ -15,7 +13,6 @@ import org.openjdk.jmh.annotations.Param;
 import org.openjdk.jmh.annotations.Scope;
 import org.openjdk.jmh.annotations.State;
 import org.openjdk.jmh.annotations.Warmup;
-import org.openjdk.jmh.runner.RunnerException;
 import org.springframework.hateoas.UriTemplate;
 import org.springframework.mock.web.MockHttpServletRequest;
 import org.springframework.web.context.request.RequestContextHolder;
@@ -27,14 +24,10 @@ import com.cgu.benchmark.controller.BenchmarkController;
 @Measurement(iterations = 5)
 @Fork(warmups = 1, value = 1)
 @Warmup(iterations = 2)
-public class HATEOASBenchmark {
+public class HateoasBenchmark {
 
     {
         RequestContextHolder.setRequestAttributes(new ServletRequestAttributes(new MockHttpServletRequest()));
-    }
-
-    public static void main(String[] args) throws IOException, RunnerException {
-        org.openjdk.jmh.Main.main(args);
     }
 
     @State(Scope.Benchmark)

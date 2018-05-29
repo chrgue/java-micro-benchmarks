@@ -5,7 +5,8 @@ Repository to compare performance.
  
 Existing benchmarks:
 
-* HATEOASBenchmark: compares href generation by [Spring HATEOAS](https://projects.spring.io/spring-hateoas) [Link](https://docs.spring.io/spring-hateoas/docs/current/api/org/springframework/hateoas/Link.html) and [UriTemplate](https://docs.spring.io/spring-hateoas/docs/current/api/org/springframework/hateoas/UriTemplate.html)     
+* HATEOASBenchmark: compares href generation by [Spring HATEOAS](https://projects.spring.io/spring-hateoas) [Link](https://docs.spring.io/spring-hateoas/docs/current/api/org/springframework/hateoas/Link.html) and [UriTemplate](https://docs.spring.io/spring-hateoas/docs/current/api/org/springframework/hateoas/UriTemplate.html)
+* Measure performance of two endpoints with restassured     
 
 
 #### Run all benchmarks
